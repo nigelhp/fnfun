@@ -1,0 +1,5 @@
+.idea
+.ensime
+.ensime_cache/
+target
+logs
