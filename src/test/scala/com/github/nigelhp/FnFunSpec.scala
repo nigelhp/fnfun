@@ -27,6 +27,11 @@ class FnFunSpec extends FreeSpec with Matchers {
          * The trailing underscore "partially applies" the function (in this case with no arguments).
          */
         val fn = baseHttpUrl _
+
+        /*
+         * Or alternatively, with more underscores ...
+         */
+        val fn2 = baseHttpUrl(_, _)
       }
 
       "which has the expected type" in new OneArgListFixture {
